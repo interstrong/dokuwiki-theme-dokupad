@@ -1,0 +1,7 @@
+base     dokupad
+author   Andy Green
+email    dev@interstrong.net
+date     2018-01-03
+name     DokuPad Template
+desc     Simple Web Notepad, based on DokuWiki Default Template 2012 by Anika Henke
+url
