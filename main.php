@@ -35,22 +35,36 @@ if ($showMenubar) $siteClasses = $siteClasses . ' showMenubar ';
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <style>
 body { font: normal 93.75%/1.4 Ubuntu, sans-serif; }
+p, ul, ol, dl, pre, table, hr, blockquote, figure, details, fieldset, address { margin-bottom:.33em; }
+p:last-child { margin-bottom:1em; }
+h1,h2,h3,h4 { margin:1em 0 1em 0; }
+h1:first-child { margin: 0 0 1em 0; }
+h5 { margin-bottom:.33em 0 0 0; }
 #dokuwiki__header .headings, #dokuwiki__header .tools { margin-bottom: 0; }
 #dokuwiki__header { padding: 0; }
 #dokuwiki__header h1 span { font-size:1.5em; font-weight:bold; }
-/* Show page tools only when logged in */
-#dokuwiki__pagetools { visibility: hidden; }
-.loggedIn #dokuwiki__pagetools { visibility: visible; }
 /*____________ menubar ____________*/
-nav.menubar { right: 0; font-size: 18px; margin-bottom: -20px; width: 100%; text-align: right; }
-/*
+nav.menubar { right: 0; margin-bottom: -10px; text-align:left; font-weight:bold; width: 100%; }
+/**
 nav.menubar a.wikilink1 { color: __text__ !important; text-decoration: none; }
 nav.menubar a.wikilink1:link:hover, nav.menubar a.wikilink1:visited:hover { text-decoration: underline; }
-*/
+/**/
 /*____________ footer ____________*/
 footer { padding-top: 0em; font-size: 0.714em; /* 10px (base: 14px) */ width: 100%; text-align: center; }
 footer nav.footer_actions_left { float: left; margin-right: 1.5em; }
 footer nav.footer_actions_right { float: right; }
+/*____________ golden wrap _______*/
+.wrap_padcolumn {float:left; margin-right:1%; }
+.wrap_goldwide { width:60%; margin-right:1%; }
+.wrap_goldslim { width:38%; margin-right:1%; }
+.wrap_goldhalf { width:49%; margin-right:1%; }
+.wrap_todocolumn {float:left; margin-right:1%; }
+.wrap_todocolumn ul { margin:0; padding:0 }
+.wrap_todocolumn ul li { margin:0; list-style:none; padding:.2em 0 .1em 0; border-bottom:1px dotted #ccc; }
+.wrap_todocolumn table { border:0; }
+.wrap_todocolumn tr { border:0; }
+.wrap_todocolumn td { border-top:0; border-left:0; border-right:0; padding:.2em 0 .1em 0; }
+.wrap_todotaskhead { border-top:2px dotted #cccc; }
     </style>
 </head>
 
