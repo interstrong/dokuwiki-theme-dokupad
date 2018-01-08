@@ -32,7 +32,7 @@ if ($showMenubar) $siteClasses = $siteClasses . ' showMenubar ';
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html') ?>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
     <style>
 body { font: normal 93.75%/1.4 Ubuntu, sans-serif; }
 p, ul, ol, dl, pre, table, hr, blockquote, figure, details, fieldset, address { margin-bottom:.33em; }
@@ -43,6 +43,9 @@ h5 { margin-bottom:.33em 0 0 0; }
 #dokuwiki__header .headings, #dokuwiki__header .tools { margin-bottom: 0; }
 #dokuwiki__header { padding: 0; }
 #dokuwiki__header h1 span { font-size:1.5em; font-weight:bold; }
+.dokuwiki textarea.edit { font-family: 'Ubuntu Mono', monospace; }
+pre, code, samp, kbd { font-family: 'Ubuntu Mono', monospace; }
+pre { padding: .33em .33em; }
 /*____________ menubar ____________*/
 nav.menubar { right: 0; margin-bottom: -10px; text-align:left; font-weight:bold; width: 100%; }
 /**
@@ -63,8 +66,8 @@ footer nav.footer_actions_right { float: right; }
 .wrap_todocolumn ul li { margin:0; list-style:none; padding:.2em 0 .1em 0; border-bottom:1px dotted #ccc; }
 .wrap_todocolumn table { border:0; }
 .wrap_todocolumn tr { border:0; }
-.wrap_todocolumn td { border-top:0; border-left:0; border-right:0; padding:.2em 0 .1em 0; }
-.wrap_todotaskhead { border-top:2px dotted #cccc; }
+.wrap_todocolumn td { border-top:0; border-left:0; border-right:0; border-bottom:1px dotted #ccc; padding:.2em 0 .1em 0; }
+.wrap_todotaskhead { border-top:2px dotted #cccc; margin-top:1em; }
     </style>
 </head>
 
