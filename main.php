@@ -35,11 +35,15 @@ if ($showMenubar) $siteClasses = $siteClasses . ' showMenubar ';
     <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
     <style>
 body { font: normal 93.75%/1.4 Ubuntu, sans-serif; }
-p, ul, ol, dl, pre, table, hr, blockquote, figure, details, fieldset, address { margin-bottom:.33em; }
-p:last-child { margin-bottom:1em; }
-h1,h2,h3,h4 { margin:1em 0 1em 0; }
-h1:first-child { margin: 0 0 1em 0; }
-h5 { margin-bottom:.33em 0 0 0; }
+p { margin-bottom: 1em; }
+ul, ol, dl { margin-bottom: 1em; }
+p + ul, p + ol { margin-top: -0.5em; }
+li { margin-bottom: .33em; }
+pre, table, hr, blockquote, figure, details, fieldset, address { margin-bottom: 0.33em; }
+h1, h2 { margin: 3em 0 1.5em 0; }
+h3, h4 { margin: 2em 0 1em 0; }
+h5 { margin: 1em 0 0 0; }
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top:0; }
 #dokuwiki__header .headings, #dokuwiki__header .tools { margin-bottom: 0; }
 #dokuwiki__header { padding: 0; }
 #dokuwiki__header h1 span { font-size:1.5em; font-weight:bold; }
