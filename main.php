@@ -43,9 +43,9 @@ pre, table, hr, blockquote, figure, details, fieldset, address { margin-bottom: 
 h1 { margin: 3em 0 1.5em 0; }
 h2, h3 { margin: 2em 0 1em 0; }
 h4, h5 { margin: 1em 0 0 0; }
-div.plugin_fastwiki_marker + h1 { margint-top:0; }
-div.plugin_fastwiki_marker + h2 { margint-top:0; }
-div.plugin_fastwiki_marker + h3 { margint-top:0; }
+div.plugin_fastwiki_marker + h1 { margin-top:0; }
+div.plugin_fastwiki_marker + h2 { margin-top:0; }
+div.plugin_fastwiki_marker + h3 { margin-top:0; }
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child { margin-top:0; }
 #dokuwiki__header .headings, #dokuwiki__header .tools { margin-bottom: 0; }
 #dokuwiki__header { padding: 0; }
